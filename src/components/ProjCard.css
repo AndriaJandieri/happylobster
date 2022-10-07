@@ -1,0 +1,81 @@
+.card-heading {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    color: #c10023;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+}
+
+.project-card {
+    background: #333333;
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+}
+
+
+.project-card:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    border: 4px solid #c10023;
+}
+
+.project-card :hover .gplay-icon {
+    color: #c10023 !important;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-title {
+    color: #faf7ff;
+
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.project-details p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.card-btns {
+    display: inline-block;
+    padding: 1rem 0rem;
+}
+
+.card-btns .btn {
+    padding: 1.5rem 3rem 1.5rem 1rem;
+    text-align: center;
+}
+
+.gplay-icon {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+@media screen and (max-width:1040px) {
+
+    .card-container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:hover {
+        transform: scale(1);
+    }
+
+}
